@@ -15,7 +15,7 @@ export function normalize(value) {
 }
 
 export function categoryOf(article) {
-  const value = normalize(article.category);
+  const value = normalize([article.category, article.id].join(' '));
   const label = normalize(article.categoryLabel);
   if (/person|protagon/.test(value + label)) return 'personajes';
   if (/mundo|lugar|localiz|region|ambient/.test(value + label)) return 'mundo';

@@ -24,6 +24,7 @@ final class SpecialArchivoEditorial extends SpecialPage {
         }
         $request = $this->getRequest();
         $id = $request->getInt( 'draft' );
+        $formValues = null;
         if ( $request->wasPosted() ) {
             if ( !$user->matchEditToken( $request->getText( 'token' ), 'archivo-editorial' ) ) {
                 $out->addHTML( Html::errorBox( 'La sesión caducó o el token no es válido. Recarga e inténtalo de nuevo.' ) );
@@ -37,7 +38,14 @@ final class SpecialArchivoEditorial extends SpecialPage {
                 $intent = $request->getText( 'intent' );
                 $version = $request->getInt( 'version' );
                 if ( $intent === 'save' || $intent === 'submit' ) {
-                    $id = DraftStore::save( $user, $id, $version, $request->getText( 'title' ),
+                    // "title" is reserved by MediaWiki's request router, including POST requests.
+                    $submittedTitle = DraftStore::title( $request->getText( 'article_title' ) );
+                    $submittedContent = $request->getText( 'content' );
+                    if ( trim( $submittedContent ) !== '' && strlen( $submittedContent ) <= 200000 ) {
+                        $formValues = [ 'title' => $submittedTitle->getText(), 'content' => $submittedContent,
+                            'version' => $version ];
+                    }
+                    $id = DraftStore::save( $user, $id, $version, $request->getText( 'article_title' ),
                         $request->getText( 'content' ), $intent === 'submit' );
                 } elseif ( $intent === 'publish' || $intent === 'reject' ) {
                     DraftStore::review( $user, $id, $version, $intent === 'publish', $request->getText( 'note' ) );
@@ -61,12 +69,19 @@ final class SpecialArchivoEditorial extends SpecialPage {
         if ( $id ) {
             try {
                 $row = DraftStore::get( $id, $user );
-                $this->renderDraft( $row );
+                $this->renderDraft( $row, $formValues );
             } catch ( \RuntimeException $e ) {
                 $out->addHTML( Html::errorBox( htmlspecialchars( $e->getMessage(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8' ) ) );
             }
         } else {
-            $this->renderEditForm( null );
+            if ( !$request->wasPosted() && $request->getText( 'article' ) !== '' ) {
+                try {
+                    $formValues = DraftStore::publicArticlePrefill( $request->getText( 'article' ) );
+                } catch ( \InvalidArgumentException | \RuntimeException $e ) {
+                    $out->addHTML( Html::errorBox( htmlspecialchars( $e->getMessage(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8' ) ) );
+                }
+            }
+            $this->renderEditForm( null, $formValues );
         }
         $out->addHTML( Html::element( 'h2', [], $user->isAllowed( 'archivo-review' ) ? 'Propuestas recientes' : 'Mis propuestas' ) );
         $out->addHTML( '<ul>' );
@@ -88,7 +103,7 @@ final class SpecialArchivoEditorial extends SpecialPage {
         return Html::hidden( $name, (string)$value );
     }
 
-    private function renderEditForm( $row ): void {
+    private function renderEditForm( $row, ?array $values = null ): void {
         if ( !$this->getUser()->isAllowed( 'archivo-propose' ) ) {
             return;
         }
@@ -96,22 +111,22 @@ final class SpecialArchivoEditorial extends SpecialPage {
         $out->addHTML( Html::openElement( 'form', [ 'method' => 'post', 'action' => $this->getPageTitle()->getLocalURL() ] ) .
             $this->hidden( 'token', $this->getUser()->getEditToken( 'archivo-editorial' ) ) .
             $this->hidden( 'draft', $row ? $row->aed_id : 0 ) .
-            $this->hidden( 'version', $row ? $row->aed_version : 0 ) .
+            $this->hidden( 'version', $values['version'] ?? ( $row ? $row->aed_version : 0 ) ) .
             Html::element( 'p', [], 'Redacta texto original en wikitext. No incluyas HTML, vídeos incrustados ni material protegido.' ) .
             Html::element( 'label', [ 'for' => 'archivo-title' ], 'Título del artículo' ) .
-            Html::input( 'title', $row ? str_replace( '_', ' ', $row->aed_title ) : '', 'text',
+            Html::input( 'article_title', $values['title'] ?? ( $row ? str_replace( '_', ' ', $row->aed_title ) : '' ), 'text',
                 [ 'id' => 'archivo-title', 'required' => true, 'maxlength' => 255, 'size' => 60 ] ) .
             Html::element( 'p' ) .
             Html::element( 'label', [ 'for' => 'archivo-content' ], 'Contenido y fuentes' ) .
             Html::element( 'textarea', [ 'name' => 'content', 'id' => 'archivo-content',
-                'required' => true, 'rows' => 20, 'cols' => 90, 'maxlength' => 200000 ], $row ? $row->aed_content : '' ) .
+                'required' => true, 'rows' => 20, 'cols' => 90, 'maxlength' => 200000 ], $values['content'] ?? ( $row ? $row->aed_content : '' ) ) .
             Html::element( 'p' ) .
             Html::element( 'button', [ 'type' => 'submit', 'name' => 'intent', 'value' => 'save' ], 'Guardar borrador privado' ) . ' ' .
             Html::element( 'button', [ 'type' => 'submit', 'name' => 'intent', 'value' => 'submit' ], 'Enviar a revisión' ) .
             Html::closeElement( 'form' ) );
     }
 
-    private function renderDraft( $row ): void {
+    private function renderDraft( $row, ?array $values = null ): void {
         $out = $this->getOutput();
         $out->addHTML( Html::element( 'h2', [], '#' . $row->aed_id . ' · ' . str_replace( '_', ' ', $row->aed_title ) ) .
             Html::element( 'p', [], 'Estado: ' . self::label( $row->aed_status ) .
@@ -121,7 +136,7 @@ final class SpecialArchivoEditorial extends SpecialPage {
         }
         if ( (int)$row->aed_user === $this->getUser()->getId() &&
             in_array( $row->aed_status, [ 'draft', 'rejected' ], true ) ) {
-            $this->renderEditForm( $row );
+            $this->renderEditForm( $row, $values );
         } else {
             // Never parse private proposals: template expansion could expose private text.
             $out->addHTML( Html::element( 'pre', [ 'style' => 'white-space:pre-wrap;overflow-wrap:anywhere' ], $row->aed_content ) );

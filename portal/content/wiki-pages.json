@@ -1,0 +1,607 @@
+{
+  "schemaVersion": 1,
+  "complete": true,
+  "generatedAt": "2026-11-17T19:18:49.764Z",
+  "endpoint": "http://127.0.0.1:8081/wiki/api.php",
+  "wikiOrigin": "http://127.0.0.1:4173",
+  "generator": "MediaWiki 1.43.11",
+  "catalogHash": "61d2c8d032d7e872fe61a9f912236a13401791af11fd7b3315a0eacdd58795d2",
+  "articles": [
+    {
+      "id": "resumen",
+      "title": "GTA VI: lo esencial",
+      "pageid": 2,
+      "revision": 2,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=GTA_VI:_lo_esencial",
+      "contentHash": "ac023aac3ea3d466655d3675e8c83630e2bc3d8b49adb889e08479615bea8b95",
+      "sourceIds": [
+        "tt-anuncio-2023",
+        "rockstar-vi"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Punto de partida para consultar anuncios, personajes y lugares con sus fuentes."
+          ]
+        },
+        {
+          "id": "wiki-una-nueva-entrega-2",
+          "title": "Una nueva entrega",
+          "paragraphs": [
+            "El anuncio de 2023 presenta una nueva entrega de Grand Theft Auto. La ventana de lanzamiento original forma parte del historial y no describe la fecha vigente."
+          ]
+        },
+        {
+          "id": "wiki-como-leer-esta-wiki-3",
+          "title": "Cómo leer esta wiki",
+          "paragraphs": [
+            "Cada dato incluye estado y fuente. «Confirmado» identifica una declaración oficial verificada; los análisis y las comprobaciones pendientes se señalan por separado."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lanzamiento",
+      "title": "Fecha de lanzamiento",
+      "pageid": 3,
+      "revision": 3,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Fecha_de_lanzamiento",
+      "contentHash": "34d019c87edd4aff8434d87fd58e797b46b866a67ddc5ace3f9a45b4fd33578e",
+      "sourceIds": [
+        "rockstar-noviembre-2025",
+        "rockstar-vi",
+        "rockstar-mayo-2025",
+        "tt-resultados-2026"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "La fecha anunciada actualmente y los cambios documentados en el calendario."
+          ]
+        },
+        {
+          "id": "wiki-fecha-vigente-2",
+          "title": "Fecha vigente",
+          "paragraphs": [
+            "19 de noviembre de 2026, según el anuncio oficial vigente. La información se verificó el 17 de noviembre de 2026 y puede cambiar."
+          ]
+        },
+        {
+          "id": "wiki-que-cambio-3",
+          "title": "Qué cambió",
+          "paragraphs": [
+            "Rockstar trasladó primero el calendario a mayo de 2026 y después a noviembre. La cronología conserva ambos anuncios para que las fechas antiguas no se confundan con la actual."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plataformas",
+      "title": "Plataformas y acceso",
+      "pageid": 4,
+      "revision": 4,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Plataformas_y_acceso",
+      "contentHash": "77b0e013f6947115f426d25a9bd0987b12e0b200edb8204bd8630edb15a006f1",
+      "sourceIds": [
+        "rockstar-vi",
+        "tt-anuncio-2023",
+        "rockstar-precarga"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Consolas confirmadas y distinción entre ejecución local y juego en la nube."
+          ]
+        },
+        {
+          "id": "wiki-consolas-2",
+          "title": "Consolas",
+          "paragraphs": [
+            "Consulta las consolas declaradas en los datos verificados de esta ficha. La disponibilidad comercial debe revisarse por región."
+          ]
+        },
+        {
+          "id": "wiki-acceso-remoto-3",
+          "title": "Acceso remoto",
+          "paragraphs": [
+            "Una vía de acceso por streaming no equivale a una versión nativa. La conexión y el servicio contratado pueden condicionar esa experiencia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lucia-caminos",
+      "title": "Lucia Caminos",
+      "pageid": 5,
+      "revision": 5,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Lucia_Caminos",
+      "contentHash": "42bfeae910b0105dcb12d62a600c4dcdafd32a1dbfc9584b4b4a1884a9919f03",
+      "sourceIds": [
+        "rockstar-leonida",
+        "rockstar-vi"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Ficha breve con información biográfica publicada por Rockstar."
+          ]
+        },
+        {
+          "id": "wiki-perfil-oficial-2",
+          "title": "Perfil oficial",
+          "paragraphs": [
+            "Tras salir de prisión, Lucia quiere construir una vida diferente. Jason forma parte de sus planes."
+          ]
+        },
+        {
+          "id": "wiki-limites-de-la-ficha-3",
+          "title": "Límites de la ficha",
+          "paragraphs": [
+            "Esta biografía no permite deducir habilidades jugables, árbol de progresión ni condiciones de selección del personaje."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jason-duval",
+      "title": "Jason Duval",
+      "pageid": 6,
+      "revision": 6,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Jason_Duval",
+      "contentHash": "c55dbef6b895f4b38f3924697a10f5bbf778b48106f2e2ce2475e375a3d5c51c",
+      "sourceIds": [
+        "rockstar-leonida",
+        "rockstar-vi"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Contexto oficial del personaje y su relación con Lucia."
+          ]
+        },
+        {
+          "id": "wiki-perfil-oficial-2",
+          "title": "Perfil oficial",
+          "paragraphs": [
+            "Jason pasó por el Ejército y después trabajó para traficantes en los Keys."
+          ]
+        },
+        {
+          "id": "wiki-informacion-por-completar-3",
+          "title": "Información por completar",
+          "paragraphs": [
+            "La ficha separa su pasado narrativo de cualquier capacidad que el jugador pudiera controlar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leonida",
+      "title": "El estado de Leonida",
+      "pageid": 7,
+      "revision": 7,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=El_estado_de_Leonida",
+      "contentHash": "a82dd0f97e314d5238c537bd29d8c02d7b0a0f5bde89aa1741ceb5837dc62412",
+      "sourceIds": [
+        "tt-anuncio-2023"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "El marco geográfico de la historia presentada oficialmente."
+          ]
+        },
+        {
+          "id": "wiki-ambientacion-2",
+          "title": "Ambientación",
+          "paragraphs": [
+            "El comunicado de presentación sitúa el juego en Leonida, con Vice City y otros lugares."
+          ]
+        },
+        {
+          "id": "wiki-sobre-el-mapa-3",
+          "title": "Sobre el mapa",
+          "paragraphs": [
+            "Dimensiones, fronteras y mapa interactivo exhaustivo: [PENDIENTE DE VERIFICAR]. No se incorpora cartografía de filtraciones ni reconstrucciones presentadas como oficiales."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vice-city",
+      "title": "Vice City",
+      "pageid": 8,
+      "revision": 8,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Vice_City",
+      "contentHash": "6373599c2582be2916d80cc431824f2d3a50ea07b9c7c9fb1f89f323bff5badb",
+      "sourceIds": [
+        "rockstar-noviembre-2025"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Una ciudad confirmada dentro de la ambientación de GTA VI."
+          ]
+        },
+        {
+          "id": "wiki-regreso-anunciado-2",
+          "title": "Regreso anunciado",
+          "paragraphs": [
+            "El anuncio de noviembre de 2025 describe el retorno a una Vice City de la época actual."
+          ]
+        },
+        {
+          "id": "wiki-calles-y-distritos-3",
+          "title": "Calles y distritos",
+          "paragraphs": [
+            "El inventario completo de barrios, interiores y actividades queda [PENDIENTE DE VERIFICAR]. No se trasladan automáticamente datos del juego anterior del mismo nombre."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regiones",
+      "title": "Lugares presentados",
+      "pageid": 9,
+      "revision": 9,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Lugares_presentados",
+      "contentHash": "ae8ba3f2733d26bcad0bf6e71731d80dfa86a9668cbe51f2e5a02a316f1d35a3",
+      "sourceIds": [
+        "rockstar-leonida"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Índice de nombres publicados en la sección oficial Only in Leonida."
+          ]
+        },
+        {
+          "id": "wiki-indice-de-lugares-2",
+          "title": "Índice de lugares",
+          "paragraphs": [
+            "Vice City · Leonida Keys · Grassrivers · Port Gellhorn · Ambrosia · Mount Kalaga."
+          ]
+        },
+        {
+          "id": "wiki-alcance-del-indice-3",
+          "title": "Alcance del índice",
+          "paragraphs": [
+            "La presencia de estos nombres no establece que constituyan una lista exhaustiva del mapa ni permite calcular distancias o superficies."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trailers",
+      "title": "Tráilers y vídeos oficiales",
+      "pageid": 10,
+      "revision": 10,
+      "timestamp": "2026-11-17T12:08:59Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Tr%C3%A1ilers_y_v%C3%ADdeos_oficiales",
+      "contentHash": "c7e0f7cdddfb75e03f546b86493ee143e3d7f636cef6209071718fd31e0609a2",
+      "sourceIds": [
+        "trailer-1",
+        "trailer-2",
+        "extended-look",
+        "extended-anuncio",
+        "newswire-vi",
+        "rockstar-precarga"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Enlaces oficiales para seguir la presentación del juego sin alojar sus vídeos."
+          ]
+        },
+        {
+          "id": "wiki-orden-de-consulta-2",
+          "title": "Orden de consulta",
+          "paragraphs": [
+            "Comienza por Trailer 1 y Trailer 2; continúa con An Extended Look y las publicaciones de lanzamiento y precarga. Los enlaces están en las fuentes de esta ficha."
+          ]
+        },
+        {
+          "id": "wiki-que-permite-afirmar-un-video-3",
+          "title": "Qué permite afirmar un vídeo",
+          "paragraphs": [
+            "Una escena de un tráiler no confirma por sí sola una función controlable por el jugador. Cualquier interpretación debe identificarse como análisis y localizar su evidencia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "musica",
+      "title": "Música y bandas sonoras",
+      "pageid": 11,
+      "revision": 11,
+      "timestamp": "2026-11-17T12:09:00Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=M%C3%BAsica_y_bandas_sonoras",
+      "contentHash": "a546d701bce0b5ed1642a780b37cb123b7b64d1120260e5e9eae6a55147e0351",
+      "sourceIds": [
+        "trailer-1",
+        "trailer-2",
+        "rockstar-album",
+        "rockstar-musica"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Canciones acreditadas en los dos primeros tráilers y publicaciones musicales oficiales."
+          ]
+        },
+        {
+          "id": "wiki-creditos-de-los-trailers-2",
+          "title": "Créditos de los tráilers",
+          "paragraphs": [
+            "Las descripciones oficiales acreditan a Tom Petty en Trailer 1 y a The Pointer Sisters en Trailer 2."
+          ]
+        },
+        {
+          "id": "wiki-musica-del-juego-3",
+          "title": "Música del juego",
+          "paragraphs": [
+            "The Album y la partitura original son publicaciones distintas. La sección musical oficial permite consultar sus anuncios y emisoras; esta wiki no reproduce audio, letras ni carátulas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jugabilidad",
+      "title": "Jugabilidad y rendimiento",
+      "pageid": 12,
+      "revision": 12,
+      "timestamp": "2026-11-17T12:09:00Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Jugabilidad_y_rendimiento",
+      "contentHash": "e763f12c2509968fd227a20a90167816e08646b0fbcb099ecb1d7e23a6f34d89",
+      "sourceIds": [
+        "rockstar-precarga",
+        "extended-look",
+        "rockstar-vi"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Información técnica confirmada y cuestiones que aún requieren una fuente precisa."
+          ]
+        },
+        {
+          "id": "wiki-anuncio-tecnico-2",
+          "title": "Anuncio técnico",
+          "paragraphs": [
+            "Un objetivo de rendimiento anunciado no sustituye una medición independiente. No debe presentarse como garantía de estabilidad en todas las situaciones."
+          ]
+        },
+        {
+          "id": "wiki-mecanicas-3",
+          "title": "Mecánicas",
+          "paragraphs": [
+            "Esta edición de la ficha no ofrece una lista exhaustiva de sistemas jugables. Para añadir una mecánica se exige una declaración explícita o una evidencia oficial identificable."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modos",
+      "title": "Modos y GTA Online",
+      "pageid": 13,
+      "revision": 13,
+      "timestamp": "2026-11-17T12:09:00Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Modos_y_GTA_Online",
+      "contentHash": "08026c40f4f2283c81db79d8deb41c9d19dde1ef224dc84eb42ba39cda82545f",
+      "sourceIds": [
+        "newswire-vi"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Seguimiento separado de los anuncios sobre modos de juego."
+          ]
+        },
+        {
+          "id": "wiki-estado-de-la-ficha-2",
+          "title": "Estado de la ficha",
+          "paragraphs": [
+            "No se ha incorporado a este catálogo una fuente verificada que permita describir los modos online de GTA VI. Esto no equivale a afirmar que un modo exista o no exista."
+          ]
+        },
+        {
+          "id": "wiki-criterio-editorial-3",
+          "title": "Criterio editorial",
+          "paragraphs": [
+            "Los anuncios de GTA Online asociados a otros títulos no se aplican automáticamente a GTA VI."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vehiculos-armas",
+      "title": "Vehículos, armas y objetos",
+      "pageid": 14,
+      "revision": 14,
+      "timestamp": "2026-11-17T12:09:00Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Veh%C3%ADculos,_armas_y_objetos",
+      "contentHash": "66657fe936267dea9a399e5262bd7d208eecbe6031772edb2bb7f606bd7a5bc5",
+      "sourceIds": [
+        "rockstar-vi",
+        "extended-look"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Inventario reservado a nombres y funciones documentados oficialmente."
+          ]
+        },
+        {
+          "id": "wiki-inventario-en-revision-2",
+          "title": "Inventario en revisión",
+          "paragraphs": [
+            "Esta primera edición no asigna nombres a modelos identificados solo por parecido visual. Tampoco publica estadísticas, precios o disponibilidad sin evidencia."
+          ]
+        },
+        {
+          "id": "wiki-como-se-incorporan-elementos-3",
+          "title": "Cómo se incorporan elementos",
+          "paragraphs": [
+            "Cada nueva entrada requiere el nombre anunciado o una descripción prudente de lo observado, la fuente y el minuto correspondiente. Una aparición visual no acredita necesariamente disponibilidad para el jugador."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "preguntas-frecuentes",
+      "title": "Preguntas frecuentes",
+      "pageid": 15,
+      "revision": 15,
+      "timestamp": "2026-11-17T12:09:00Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=Preguntas_frecuentes",
+      "contentHash": "b93c621e1e51be95d6a167cf2e7302a03e30c727874a89deb367efb6af950302",
+      "sourceIds": [
+        "rockstar-noviembre-2025",
+        "rockstar-vi"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Respuestas breves con separación entre información confirmada y pendientes."
+          ]
+        },
+        {
+          "id": "wiki-cuando-sale-2",
+          "title": "¿Cuándo sale?",
+          "paragraphs": [
+            "El 19 de noviembre de 2026 según el calendario anunciado, sujeto a cambios."
+          ]
+        },
+        {
+          "id": "wiki-cuanto-cuesta-3",
+          "title": "¿Cuánto cuesta?",
+          "paragraphs": [
+            "[PENDIENTE DE VERIFICAR]. El precio debe vincularse a una edición, una tienda, una región, una moneda y una fecha; no se publica una cifra universal."
+          ]
+        },
+        {
+          "id": "wiki-y-la-version-para-pc-4",
+          "title": "¿Y la versión para PC?",
+          "paragraphs": [
+            "[PENDIENTE DE VERIFICAR]. Esta wiki no deduce una fecha para PC a partir del historial de otros títulos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saga",
+      "title": "La saga: contexto",
+      "pageid": 16,
+      "revision": 16,
+      "timestamp": "2026-11-17T12:09:00Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=La_saga:_contexto",
+      "contentHash": "d2d09026a7e84c16adfc14d9491e0f585b4c1ac94c89216ed967bfdce023533a",
+      "sourceIds": [
+        "tt-anuncio-2023"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Referencias históricas básicas para situar esta entrega."
+          ]
+        },
+        {
+          "id": "wiki-lectura-historica-2",
+          "title": "Lectura histórica",
+          "paragraphs": [
+            "El anuncio de GTA VI sitúa la nueva entrega en una serie que incluye GTA III, Vice City, San Andreas, GTA IV y GTA V."
+          ]
+        },
+        {
+          "id": "wiki-sin-deducir-continuidad-3",
+          "title": "Sin deducir continuidad",
+          "paragraphs": [
+            "Compartir un nombre de lugar o una marca de la saga no basta para establecer continuidad narrativa, personajes compartidos o mecánicas idénticas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "precarga",
+      "title": "La precarga ya está anunciada",
+      "pageid": 17,
+      "revision": 17,
+      "timestamp": "2026-11-17T12:09:00Z",
+      "url": "http://127.0.0.1:4173/wiki/index.php?title=La_precarga_ya_est%C3%A1_anunciada",
+      "contentHash": "e4bc15b9764197fb19654ebbaebbe63e42b1e168adb275a609fe3fb832dba40d",
+      "sourceIds": [
+        "rockstar-precarga",
+        "rockstar-horarios"
+      ],
+      "sections": [
+        {
+          "id": "wiki-contexto-editorial-1",
+          "title": "Contexto editorial",
+          "paragraphs": [
+            "Qué dice el comunicado oficial publicado el 10 de noviembre de 2026."
+          ]
+        },
+        {
+          "id": "wiki-anuncio-de-precarga-2",
+          "title": "Anuncio de precarga",
+          "paragraphs": [
+            "Descarga anticipada y desbloqueo son momentos distintos. Comprueba las condiciones que corresponden a tu compra."
+          ]
+        },
+        {
+          "id": "wiki-comprobar-la-region-3",
+          "title": "Comprobar la región",
+          "paragraphs": [
+            "Consulta el soporte enlazado y la tienda de tu cuenta para comprobar las condiciones aplicables a tu región."
+          ]
+        }
+      ]
+    }
+  ],
+  "missingArticleIds": [],
+  "unmatched": [
+    {
+      "title": "Página principal",
+      "pageid": 1,
+      "revision": 1
+    }
+  ]
+}

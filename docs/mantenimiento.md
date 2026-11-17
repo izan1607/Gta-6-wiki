@@ -7,7 +7,7 @@
 3. Revisa si el nuevo anuncio sustituye a un dato anterior. Conserva la cronología; no sobrescribas la fecha de un anuncio pasado como si nunca hubiera existido.
 4. Redacta texto propio. No subas capturas, logos, música, miniaturas oficiales ni filtraciones. Comprueba la licencia y procedencia de cualquier ilustración incorporada.
 5. Propón el cambio en ArchivoEditorial, conserva el borrador y envíalo a revisión. Un editor debe contrastar evidencia, etiquetas y diferencias antes de publicar. Comprueba que una propuesta pendiente no se vea en páginas, búsqueda o exportación pública.
-6. Actualiza el catálogo del portal a partir de lo publicado, ejecuta su validación y revisa enlaces internos, filtros y fecha de verificación. Construye y publica el portal; comprueba el resultado de la publicación.
+6. Revisa las afirmaciones y metadatos del catálogo cuando cambien las evidencias. Ejecuta `npm.cmd run sync` para traer los cuerpos publicados de MediaWiki, `npm.cmd run build` y `npm.cmd test`. La sincronización no cambia por sí sola la verificación de los hechos. Revisa enlaces y filtros, publica la salida estática y comprueba el resultado.
 
 ## Operación periódica
 

@@ -82,6 +82,22 @@ GET /wiki/api.php?action=archivoexport&format=json&limit=100&from=0
 
 No se exportan usuarios, correos, credenciales, borradores, notas editoriales ni auditoría. Las páginas públicas del espacio principal son públicamente accesibles también por las APIs estándar de MediaWiki.
 
+### Sincronización con el portal
+
+Desde el repositorio se ejecuta:
+
+```powershell
+node portal/scripts/sync-wiki.mjs --endpoint http://127.0.0.1:8081/wiki/api.php
+```
+
+Para una wiki remota debe utilizarse su endpoint HTTPS. La herramienta consulta primero `siteinfo`, verifica la instalación y después recorre todas las páginas de `archivoexport` sin enviar cookies ni credenciales. Valida formato, tamaño, cursores crecientes, revisiones, fechas y URLs canónicas. Si falla una página, conserva el snapshot anterior: nunca guarda una exportación parcial.
+
+`portal/content/wiki-pages.json` contiene un snapshot completo, hash del catálogo, revisiones públicas, hash del wikitext y secciones de texto plano. No evalúa plantillas, HTML, scripts, iframes ni tablas wiki. Los enlaces se convierten a texto. Los bloques de datos/evidencia y fuentes se omiten para que la web conserve la clasificación, fechas de verificación y fuentes del catálogo editorial. Publicar una edición no convierte por sí mismo sus afirmaciones en hechos oficialmente verificados.
+
+Las páginas coincidentes se identifican por el título del catálogo, no por un ID proporcionado desde el texto editable. `missingArticleIds` identifica los artículos ya ausentes en una exportación completa, incluidos borrados o convertidos en redirecciones. `unmatched` registra páginas nuevas sin publicar automáticamente contenido que carezca de metadatos revisados en el catálogo. Renombrar una página exige actualizar el título del catálogo y volver a sincronizar. El build del portal debe consumir este snapshot, excluir los artículos ausentes y limpiar las rutas obsoletas antes de generar su salida. Solo después se publica la nueva compilación estática.
+
+Los consumidores del snapshot deben escapar todos sus textos al producir HTML; el proyector conservador de wikitext no sustituye el escape de salida. Las pruebas de `portal/tests/sync-wiki.test.mjs` verifican plantillas/HTML/enlaces, paginación, borrados, páginas sin metadatos y rechazo de URLs y cursores maliciosos.
+
 ## Base de datos y configuración
 
 `infra/mediawiki/LocalSettings.php` se configura mediante variables de entorno y puede incluirse al final del archivo generado por el instalador local. Nunca se introducen secretos reales en ese archivo versionado.
@@ -104,7 +120,7 @@ Después de copiar la extensión y cargar la configuración se ejecuta `php main
 - HTML crudo, subidas, imágenes remotas y JavaScript/CSS personal están desactivados. MediaWiki sigue permitiendo el subconjunto seguro de etiquetas de su parser; no equivale a quitar todo el formato HTML seguro.
 - Hash Argon2 para contraseñas nuevas o rehashes; MediaWiki conserva compatibilidad con las anteriores del instalador.
 - Cookies HttpOnly y SameSite=Lax; Secure y redirección HTTPS en producción.
-- OATHAuth de la misma distribución para 2FA obligatorio de `sysop` en producción. El arranque de producción falla si falta esta extensión; desarrollo permite acceder sin 2FA para configurar la prueba local.
+- OATHAuth de la misma distribución para 2FA obligatorio de los grupos administrativos `sysop`, `bureaucrat` e `interface-admin` en producción. Sin inscripción de 2FA se suspenden sus permisos privilegiados y se permite activar el segundo factor. El arranque de producción falla si falta esta extensión; desarrollo permite acceder sin 2FA para configurar la prueba local.
 - Permisos y tokens nativos, límites de edición, registro público cerrado y revisión de propuestas en servidor.
 - CSP de MediaWiki compatible con ResourceLoader y CSP separada para el portal. ResourceLoader conserva necesidades heredadas de scripts/evaluación y estilos; no se afirma una política de nonces estricta.
 - Caddy añade X-Frame-Options, X-Content-Type-Options, Referrer-Policy y Permissions-Policy. La configuración pública añade HSTS y certificados TLS automáticos.
@@ -112,6 +128,8 @@ Después de copiar la extensión y cargar la configuración se ejecuta `php main
 - Apache bloquea directorios de mantenimiento, código interno, instalador web, SQL y archivos sensibles.
 
 `compose.yaml` sirve desarrollo local con HTTP en `http://localhost:8080`. La variante `infra/compose.production.yaml`, combinada con el archivo base, requiere `SITE_DOMAIN` real, DNS y puertos 80/443 disponibles. Deben sustituirse todos los ejemplos de contraseña y completar el responsable legal antes de hacer público el servicio.
+
+En ambos modos Docker, Caddy responde `/runtime.json` con JSON `{"wikiAvailable":true}` y `Cache-Control: no-store`: este indicador declara que la ruta al backend está configurada; el cliente debe confirmar su respuesta real mediante `siteinfo` antes de mostrar las herramientas de edición. El artefacto estático mantiene su indicador desactivado. El portal usa CSP sin `unsafe-inline`, separada de la de MediaWiki. Las rutas inexistentes se sirven con `404.html` y estado HTTP 404 mediante [`handle_errors`](https://caddyserver.com/docs/caddyfile/directives/handle_errors), sin convertirlas en la portada con un estado 200.
 
 El archivo de configuración no convierte el sistema en inmune a OWASP Top 10. WAF/CDN, protección DDoS del proveedor, copias externas programadas, monitorización, SMTP y pruebas de restauración necesitan configuración de infraestructura operativa. Tampoco están desplegados por estos archivos. Una revisión externa de seguridad e intelectual sigue siendo necesaria antes de abrir colaboración o monetización.
 

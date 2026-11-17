@@ -4,9 +4,11 @@ namespace ArchivoEditorial;
 use MediaWiki\CommentStore\CommentStoreComment;
 use MediaWiki\Content\WikitextContent;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\IDBAccessObject;
 
 /** Draft text lives only in extension tables, never in searchable wiki revisions. */
 final class DraftStore {
@@ -29,6 +31,31 @@ final class DraftStore {
             throw new \RuntimeException( 'La propuesta no existe o no tienes acceso.' );
         }
         return $row;
+    }
+
+    /** Read-only prefill from the current public revision, never a private proposal or hidden text. */
+    public static function publicArticlePrefill( string $titleText ): array {
+        $title = self::title( $titleText );
+        $services = MediaWikiServices::getInstance();
+        $anonymous = User::newFromId( 0 );
+        if ( !$services->getPermissionManager()->userCan( 'read', $anonymous, $title ) ) {
+            throw new \RuntimeException( 'Solo puedes precargar artículos de lectura pública.' );
+        }
+        // Read the primary so replica lag cannot preload recently suppressed content.
+        $revision = $services->getRevisionLookup()->getRevisionByTitle( $title, 0, IDBAccessObject::READ_LATEST );
+        if ( !$revision ) {
+            // A missing public page is a new proposal, not a request to inspect draft storage.
+            return [ 'title' => $title->getText(), 'content' => '' ];
+        }
+        if ( $revision->getVisibility() & RevisionRecord::DELETED_TEXT ) {
+            throw new \RuntimeException( 'La revisión pública no está disponible para precargar este formulario.' );
+        }
+        // Use the public audience even when the caller is an administrator.
+        $content = $revision->getContent( 'main', RevisionRecord::FOR_PUBLIC );
+        if ( !$content instanceof WikitextContent || strlen( $content->getText() ) > 200000 ) {
+            throw new \RuntimeException( 'La revisión pública no está disponible para precargar este formulario.' );
+        }
+        return [ 'title' => $title->getText(), 'content' => $content->getText() ];
     }
 
     public static function listing( User $user ) {

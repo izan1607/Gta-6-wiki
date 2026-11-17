@@ -59,7 +59,7 @@ Para detener los servidores, utiliza `Ctrl+C` en sus respectivas terminales. El 
 
 ## Importación de contenido y datos persistentes
 
-El catálogo de origen está en `portal/content/catalog.json`. Una importación no significa que la wiki y el JSON se sincronicen automáticamente en ambos sentidos. Después de una publicación editorial se debe revisar y actualizar el catálogo del portal, validarlo y volver a construir/publicar el portal. La API de exportación ayuda a consultar el contenido publicado; no publica automáticamente la interfaz estática.
+El catálogo de origen está en `portal/content/catalog.json`. Una importación no significa que la wiki y el JSON se sincronicen automáticamente en ambos sentidos. Después de una publicación editorial, ejecuta `npm.cmd run sync` desde la raíz y después `npm.cmd run build` y `npm.cmd test`. La sincronización incorpora únicamente cuerpos públicos y metadatos de revisión. Las afirmaciones, fuentes y fechas de verificación se mantienen en el catálogo y requieren revisión explícita. Si cambias ese catálogo, sincroniza de nuevo; si una página se ha retirado de MediaWiki, el build se detiene para que revises sus metadatos antes de publicarla. La salida estática debe desplegarse después de construir.
 
 Importación manual de páginas nuevas, con la configuración de entorno de `start-local.ps1` aplicada en la sesión correspondiente:
 

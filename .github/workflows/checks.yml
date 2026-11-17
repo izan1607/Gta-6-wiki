@@ -1,0 +1,19 @@
+name: Comprobar el archivo
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  portal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - run: node portal/scripts/build.mjs
+      - run: node --test portal/tests/*.test.mjs
+      - name: Comprobar sintaxis PHP
+        run: find wiki/extensions/ArchivoEditorial scripts -name '*.php' -print0 | xargs -0 -n 1 php -l

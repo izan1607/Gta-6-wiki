@@ -11,6 +11,7 @@ let saved = storage.get('saved', []);
 if (!Array.isArray(saved)) saved = [];
 let consent = storage.get('consent', { youtube: false });
 if (!consent || typeof consent !== 'object') consent = { youtube: false };
+$('#cookie-banner').hidden = consent.decided === true;
 let catalog;
 let toastTimeout;
 let pendingVideo = null;
@@ -68,7 +69,7 @@ function updateSearch() {
   if (!catalog) return;
   const query = $('#global-search').value;
   const results = filterArticles(catalog.articles, { query }).slice(0, 7);
-  $('#search-results').innerHTML = results.length ? `${!query ? '<p class="search-empty" style="padding:8px 12px;text-align:left">Un buen lugar para empezar</p>' : ''}${results.map(a => `<a class="search-result" href="${articlePath(a)}">${icon(categoryOf(a) === 'personajes' ? 'users' : categoryOf(a) === 'mundo' ? 'map' : 'file')}<div><strong>${e(a.title)}</strong><small>${e(a.categoryLabel)} · ${a.readingMinutes} min de lectura</small></div>${icon('arrow')}</a>`).join('')}` : `<div class="search-empty">No hay resultados para «${e(query)}». Prueba con otro nombre o tema.</div>`;
+  $('#search-results').innerHTML = results.length ? `${!query ? '<p class="search-empty suggested">Un buen lugar para empezar</p>' : ''}${results.map(a => `<a class="search-result" href="${articlePath(a)}">${icon(categoryOf(a) === 'personajes' ? 'users' : categoryOf(a) === 'mundo' ? 'map' : 'file')}<div><strong>${e(a.title)}</strong><small>${e(a.categoryLabel)} · ${a.readingMinutes} min de lectura</small></div>${icon('arrow')}</a>`).join('')}` : `<div class="search-empty">No hay resultados para «${e(query)}». Prueba con otro nombre o tema.</div>`;
 }
 
 function openSearch() {
@@ -128,7 +129,8 @@ document.addEventListener('click', event => {
   if (event.target.closest('[data-close-menu]')) closeMenu();
   if (event.target.closest('[data-cookie-open]')) { pendingVideo = null; openPreferences(); }
   if (event.target.closest('[data-cookie-reject]')) {
-    consent = { youtube: false };
+    consent = { youtube: false, decided: true };
+    $('#cookie-banner').hidden = true;
     storage.set('consent', consent);
     removeVideo();
     if ($('#video-dialog').open) $('#video-dialog').close();
@@ -137,7 +139,8 @@ document.addEventListener('click', event => {
     toast('Vídeos externos desactivados.');
   }
   if (event.target.closest('[data-cookie-save]')) {
-    consent = { youtube: $('#youtube-consent').checked };
+    consent = { youtube: $('#youtube-consent').checked, decided: true };
+    $('#cookie-banner').hidden = true;
     const persisted = storage.set('consent', consent);
     $('#preferences-dialog').close();
     if (!consent.youtube) removeVideo();
@@ -227,6 +230,10 @@ try {
   const response = await fetch('/runtime.json', { cache: 'no-store' });
   if (response.ok && response.headers.get('content-type')?.includes('application/json')) {
     const runtime = await response.json();
-    if (runtime.wikiAvailable === true) $$('[data-wiki]').forEach(element => { element.hidden = false; });
+    if (runtime.wikiAvailable === true) {
+      const probe = await fetch('/wiki/api.php?action=query&meta=siteinfo&format=json', { cache: 'no-store', signal: AbortSignal.timeout(4000) });
+      const siteInfo = await probe.json();
+      if (probe.ok && typeof siteInfo?.query?.general?.sitename === 'string') $$('[data-wiki]').forEach(element => { element.hidden = false; });
+    }
   }
 } catch { /* El portal publicado puede funcionar como catálogo lector independiente. */ }

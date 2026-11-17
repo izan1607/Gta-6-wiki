@@ -113,7 +113,7 @@ if ( is_file( $IP . '/extensions/OATHAuth/extension.json' ) ) {
     $wgGroupPermissions['sysop']['oathauth-enable'] = true;
     $wgGroupPermissions['editor']['oathauth-enable'] = true;
     // REL1_43 setting; does not use the 1.46-only RestrictedGroups API.
-    $wgOATHRequiredForGroups = $archivoProduction ? [ 'sysop' ] : [];
+    $wgOATHRequiredForGroups = $archivoProduction ? [ 'sysop', 'bureaucrat', 'interface-admin' ] : [];
 } elseif ( $archivoProduction ) {
     throw new RuntimeException( 'Production requires the compatible OATHAuth extension.' );
 }

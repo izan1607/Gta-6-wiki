@@ -1,20 +1,28 @@
-import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, cp, rm, lstat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { categories, validateCatalog, articlePath, categoryOf } from '../src/model.mjs';
 import { layout, home, listing, articlePage, timelinePage, sourcesPage, changesPage, policyPage, policyKeys, notFound } from '../src/template.mjs';
 import { createArtwork } from './artwork.mjs';
+import { mergeWikiSnapshot } from './catalog.mjs';
 
 const root = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 const out = path.join(root, 'dist');
-const catalog = JSON.parse(await readFile(path.join(root, 'content/catalog.json'), 'utf8'));
-validateCatalog(catalog);
+const sourceCatalog = JSON.parse(await readFile(path.join(root, 'content/catalog.json'), 'utf8'));
+validateCatalog(sourceCatalog);
+let snapshot = null;
+try { snapshot = JSON.parse(await readFile(path.join(root, 'content/wiki-pages.json'), 'utf8')); }
+catch (error) { if (error.code !== 'ENOENT') throw error; }
+const catalog = mergeWikiSnapshot(sourceCatalog, snapshot);
 let origin = process.env.SITE_ORIGIN?.replace(/\/$/, '') || '';
 if (!origin) {
-  try { origin = JSON.parse(await readFile(path.join(root, '.openai/site-origin.json'), 'utf8')).origin; } catch { /* Le développement local ne requiert pas d'origine publique. */ }
+  try { origin = JSON.parse(await readFile(path.join(root, '.openai/site-origin.json'), 'utf8')).origin; } catch { /* El desarrollo local no requiere un origen público. */ }
 }
 if (origin && !/^https?:\/\/[^/]+$/.test(origin)) throw new Error('SITE_ORIGIN debe ser un origen HTTP(S) sin ruta');
+// Solo se limpia la carpeta generada de este checkout, después de validar los datos.
+if (path.dirname(out) !== root || path.basename(out) !== 'dist' || (await lstat(out).catch(() => null))?.isSymbolicLink()) throw new Error('Destino de construcción inseguro');
+await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 const routes = [];
 async function page(route, title, description, content, active = '', article = null) {
@@ -42,7 +50,7 @@ await createArtwork(path.join(out, 'assets'));
 await writeFile(path.join(out, 'assets/favicon.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#191a1c"/><path d="M8 9h9l3 4 3-4h9v22h-9l-3 2-3-2H8Z" fill="none" stroke="#f0927d" stroke-width="2"/><path d="M20 14v14m-8-12h4m-4 5h4m8-5h4m-4 5h4" stroke="#f0927d" stroke-width="1.5"/></svg>');
 await writeFile(path.join(out, 'catalog.json'), JSON.stringify(catalog));
 await writeFile(path.join(out, 'runtime.json'), JSON.stringify({ wikiAvailable: false }));
-const lastmod = catalog.verifiedAt;
+const lastmod = catalog.articles.reduce((date, article) => article.wikiRevision?.timestamp?.slice(0, 10) > date ? article.wikiRevision.timestamp.slice(0, 10) : date, catalog.verifiedAt);
 const publicRoutes = routes.filter(route => !['/es/guardados/', '/es/buscar/', '/es/cambios-recientes/'].includes(route));
 await writeFile(path.join(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${origin ? publicRoutes.map(route => `<url><loc>${origin}${route}</loc><lastmod>${lastmod}</lastmod></url>`).join('') : ''}</urlset>`);
 await writeFile(path.join(out, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /wiki/\nDisallow: /es/guardados/\nDisallow: /es/buscar/\n${origin ? `Sitemap: ${origin}/sitemap.xml\n` : ''}`);

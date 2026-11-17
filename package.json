@@ -1,0 +1,12 @@
+{
+  "name": "archivo-de-juego-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node portal/scripts/dev.mjs",
+    "build": "node portal/scripts/build.mjs",
+    "test": "node --test portal/tests/*.test.mjs",
+    "sync": "node portal/scripts/sync-wiki.mjs --endpoint http://127.0.0.1:8081/wiki/api.php"
+  },
+  "engines": { "node": ">=22" }
+}
