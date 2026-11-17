@@ -1,0 +1,21 @@
+# Combine with: docker compose -f compose.yaml -f infra/compose.production.yaml up -d
+# Public domain DNS must point to this host; ports 80/443 must be reachable.
+services:
+  proxy:
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      SITE_DOMAIN: ${SITE_DOMAIN:?Set SITE_DOMAIN to your public domain}
+    volumes:
+      - ./infra/caddy/Caddyfile.production:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+  wiki:
+    environment:
+      MW_ENV: production
+      MW_SERVER: https://${SITE_DOMAIN:?Set SITE_DOMAIN to your public domain}
+volumes:
+  caddy_data:
+  caddy_config:

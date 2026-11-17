@@ -1,0 +1,15 @@
+.runtime/
+.env
+**/node_modules/
+portal/dist/
+portal/.sites-runtime/
+portal/.sites-checkout*/
+*.log
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.tar.gz
+*.zip
+.DS_Store
+

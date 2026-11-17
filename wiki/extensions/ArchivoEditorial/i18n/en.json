@@ -1,0 +1,10 @@
+{
+  "@metadata": { "authors": ["Community archive"] },
+  "archivoeditorial": "Editorial dashboard",
+  "archivoeditorial-desc": "Private proposals, review and publication using native revision history.",
+  "right-archivo-propose": "Create and submit private editorial proposals",
+  "right-archivo-review": "Review and publish editorial proposals",
+  "group-contributor": "Contributors",
+  "group-editor": "Editors",
+  "action-archivo-propose": "create editorial proposals"
+}

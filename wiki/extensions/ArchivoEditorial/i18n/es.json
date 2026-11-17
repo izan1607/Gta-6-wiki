@@ -1,0 +1,10 @@
+{
+  "@metadata": { "authors": ["Archivo comunitario"] },
+  "archivoeditorial": "Panel editorial",
+  "archivoeditorial-desc": "Propuestas privadas, revisión y publicación con historial nativo.",
+  "right-archivo-propose": "Crear y enviar propuestas editoriales privadas",
+  "right-archivo-review": "Revisar y publicar propuestas editoriales",
+  "group-contributor": "Colaboradores",
+  "group-editor": "Editores",
+  "action-archivo-propose": "crear propuestas editoriales"
+}

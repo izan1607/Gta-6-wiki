@@ -1,0 +1,23 @@
+{
+  "name": "ArchivoEditorial",
+  "version": "0.1.0",
+  "author": ["Archivo comunitario"],
+  "descriptionmsg": "archivoeditorial-desc",
+  "license-name": "MIT",
+  "type": "specialpage",
+  "requires": { "MediaWiki": ">= 1.43" },
+  "AutoloadNamespaces": { "ArchivoEditorial\\": "includes/" },
+  "MessagesDirs": { "ArchivoEditorial": ["i18n"] },
+  "SpecialPages": { "ArchivoEditorial": "ArchivoEditorial\\SpecialArchivoEditorial" },
+  "APIModules": { "archivoexport": "ArchivoEditorial\\ApiExport" },
+  "Hooks": {
+    "LoadExtensionSchemaUpdates": "ArchivoEditorial\\Hooks::onLoadExtensionSchemaUpdates"
+  },
+  "AvailableRights": ["archivo-propose", "archivo-review"],
+  "GroupPermissions": {
+    "contributor": { "archivo-propose": true },
+    "editor": { "archivo-propose": true, "archivo-review": true },
+    "sysop": { "archivo-propose": true, "archivo-review": true }
+  },
+  "manifest_version": 2
+}

@@ -1,0 +1,71 @@
+name: archivo-juego
+services:
+  proxy:
+    image: caddy:2.11.9-alpine
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ./infra/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./portal/dist:/srv:ro
+    depends_on:
+      - wiki
+    networks:
+      - web
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+  wiki:
+    build:
+      context: .
+      dockerfile: infra/mediawiki/Dockerfile
+      args:
+        MEDIAWIKI_VERSION: "1.43.11"
+    environment:
+      MW_ENV: ${MW_ENV:-development}
+      MW_SITE_NAME: ${MW_SITE_NAME:-Archivo de Juego}
+      MW_SERVER: ${MW_SERVER:-http://localhost:8080}
+      MW_SCRIPT_PATH: /wiki
+      MW_DB_TYPE: mysql
+      MW_DB_HOST: db
+      MW_DB_NAME: ${MW_DB_NAME:-archivo}
+      MW_DB_USER: ${MW_DB_USER:-archivo}
+      MW_DB_PASSWORD: ${MW_DB_PASSWORD:?Set MW_DB_PASSWORD}
+      MW_SECRET_KEY: ${MW_SECRET_KEY:?Set MW_SECRET_KEY}
+      MW_UPGRADE_KEY: ${MW_UPGRADE_KEY:?Set MW_UPGRADE_KEY}
+      MW_ADMIN_USER: ${MW_ADMIN_USER:-Admin}
+      MW_ADMIN_PASSWORD: ${MW_ADMIN_PASSWORD:?Set MW_ADMIN_PASSWORD}
+      MW_CONTACT_EMAIL: ${MW_CONTACT_EMAIL:-}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - web
+      - database
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+  db:
+    image: mariadb:11.4.14
+    environment:
+      MARIADB_DATABASE: ${MW_DB_NAME:-archivo}
+      MARIADB_USER: ${MW_DB_USER:-archivo}
+      MARIADB_PASSWORD: ${MW_DB_PASSWORD:?Set MW_DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:?Set MARIADB_ROOT_PASSWORD}
+    volumes:
+      - wiki_database:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    networks:
+      - database
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  wiki_database:
+networks:
+  web:
+  database:
+    internal: true

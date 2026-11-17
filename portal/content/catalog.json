@@ -1,0 +1,1120 @@
+{
+  "verifiedAt": "2026-11-17",
+  "sources": [
+    {
+      "id": "rockstar-vi",
+      "title": "Grand Theft Auto VI — sitio oficial",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/VI",
+      "publishedAt": null,
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "rockstar-leonida",
+      "title": "Only in Leonida — personas y lugares",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/VI/only-in-leonida",
+      "publishedAt": null,
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "tt-anuncio-2023",
+      "title": "Rockstar Games Announces Grand Theft Auto VI, Coming 2025",
+      "publisher": "Take-Two Interactive",
+      "url": "https://www.take2games.com/ir/news/rockstar-games-announces-grand-theft-auto-vi-coming-2025",
+      "publishedAt": "2023-12-04",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "rockstar-mayo-2025",
+      "title": "Grand Theft Auto VI is Now Coming May 26, 2026",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/newswire/article/258aa538o412ok/grand-theft-auto-vi-is-now-coming-may-26-2026",
+      "publishedAt": "2025-05-02",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "rockstar-noviembre-2025",
+      "title": "Grand Theft Auto VI is Now Set to Launch November 19, 2026",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+      "publishedAt": "2025-11-06",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "tt-resultados-2026",
+      "title": "Resultados del segundo trimestre fiscal 2027",
+      "publisher": "Take-Two Interactive",
+      "url": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reports-results-fiscal-4",
+      "publishedAt": "2026-11-09",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "trailer-1",
+      "title": "Grand Theft Auto VI Trailer 1",
+      "publisher": "Rockstar Games · YouTube",
+      "url": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
+      "publishedAt": "2023-12-04",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "trailer-2",
+      "title": "Grand Theft Auto VI Trailer 2",
+      "publisher": "Rockstar Games · YouTube",
+      "url": "https://www.youtube.com/watch?v=VQRLujxTm3c",
+      "publishedAt": "2025-05-06",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "extended-look",
+      "title": "Grand Theft Auto VI: An Extended Look",
+      "publisher": "Rockstar Games · YouTube",
+      "url": "https://www.youtube.com/watch?v=tJbzMqJGH4k",
+      "publishedAt": "2026-08-27",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "extended-anuncio",
+      "title": "Grand Theft Auto VI: An Extended Look — anuncio",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/newswire/article/9k2kaa1o3297k9/grand-theft-auto-vi-an-extended-look",
+      "publishedAt": "2026-08-06",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "newswire-vi",
+      "title": "Newswire — publicaciones de GTA VI",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/newswire?tag=vi",
+      "publishedAt": null,
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "rockstar-musica",
+      "title": "The Music of Grand Theft Auto VI",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/VI/music",
+      "publishedAt": null,
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "rockstar-album",
+      "title": "Announcing Grand Theft Auto VI: The Album, Coming November 19",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19",
+      "publishedAt": "2026-09-17",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "rockstar-precarga",
+      "title": "Pre-Load Grand Theft Auto VI Now",
+      "publisher": "Rockstar Games",
+      "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+      "publishedAt": "2026-11-10",
+      "verifiedAt": "2026-11-17"
+    },
+    {
+      "id": "rockstar-horarios",
+      "title": "Regional pre-load and release times on PlayStation 5 and Xbox Series X|S",
+      "publisher": "Rockstar Games Support",
+      "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s",
+      "publishedAt": "2026-11-03",
+      "verifiedAt": "2026-11-17"
+    }
+  ],
+  "articles": [
+    {
+      "id": "resumen",
+      "slug": "resumen",
+      "title": "GTA VI: lo esencial",
+      "category": "general",
+      "categoryLabel": "El juego",
+      "summary": "Punto de partida para consultar anuncios, personajes y lugares con sus fuentes.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "guía",
+        "oficial"
+      ],
+      "facts": [
+        {
+          "text": "Rockstar anunció Grand Theft Auto VI el 4 de diciembre de 2023.",
+          "status": "confirmed",
+          "sourceIds": [
+            "tt-anuncio-2023"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "La presentación oficial sitúa la historia de Jason y Lucia en el estado de Leonida.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "contexto",
+          "title": "Una nueva entrega",
+          "paragraphs": [
+            "El anuncio de 2023 presenta una nueva entrega de Grand Theft Auto. La ventana de lanzamiento original forma parte del historial y no describe la fecha vigente."
+          ]
+        },
+        {
+          "id": "lectura",
+          "title": "Cómo leer esta wiki",
+          "paragraphs": [
+            "Cada dato incluye estado y fuente. «Confirmado» identifica una declaración oficial verificada; los análisis y las comprobaciones pendientes se señalan por separado."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "lanzamiento",
+        "lucia-caminos",
+        "jason-duval",
+        "leonida"
+      ]
+    },
+    {
+      "id": "lanzamiento",
+      "slug": "lanzamiento",
+      "title": "Fecha de lanzamiento",
+      "category": "general",
+      "categoryLabel": "El juego",
+      "summary": "La fecha anunciada actualmente y los cambios documentados en el calendario.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "fecha",
+        "cronología"
+      ],
+      "facts": [
+        {
+          "text": "La fecha anunciada vigente es el 19 de noviembre de 2026.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-noviembre-2025",
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "El 2 de mayo de 2025 se anunció el 26 de mayo de 2026; esa fecha quedó sustituida por el anuncio del 6 de noviembre de 2025.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-mayo-2025",
+            "rockstar-noviembre-2025"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "La comunicación de resultados de Take-Two del 9 de noviembre de 2026 mantuvo el lanzamiento previsto para ese mes.",
+          "status": "confirmed",
+          "sourceIds": [
+            "tt-resultados-2026"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "vigente",
+          "title": "Fecha vigente",
+          "paragraphs": [
+            "19 de noviembre de 2026, según el anuncio oficial vigente. La información se verificó el 17 de noviembre de 2026 y puede cambiar."
+          ]
+        },
+        {
+          "id": "historial",
+          "title": "Qué cambió",
+          "paragraphs": [
+            "Rockstar trasladó primero el calendario a mayo de 2026 y después a noviembre. La cronología conserva ambos anuncios para que las fechas antiguas no se confundan con la actual."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "plataformas",
+        "precarga",
+        "preguntas-frecuentes"
+      ]
+    },
+    {
+      "id": "plataformas",
+      "slug": "plataformas",
+      "title": "Plataformas y acceso",
+      "category": "general",
+      "categoryLabel": "El juego",
+      "summary": "Consolas confirmadas y distinción entre ejecución local y juego en la nube.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "PS5",
+        "Xbox Series X|S",
+        "PC"
+      ],
+      "facts": [
+        {
+          "text": "Las plataformas de lanzamiento anunciadas son PlayStation 5 y Xbox Series X|S.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-vi",
+            "tt-anuncio-2023"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Rockstar también anuncia acceso mediante Xbox Cloud Gaming en Xbox Series X|S y Xbox One, y compatibilidad con Remote Play.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-precarga"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Versión nativa para PC y sus requisitos: [PENDIENTE DE VERIFICAR] en Rockstar y en las tiendas oficiales.",
+          "status": "pending",
+          "sourceIds": [
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "consolas",
+          "title": "Consolas",
+          "paragraphs": [
+            "Consulta las consolas declaradas en los datos verificados de esta ficha. La disponibilidad comercial debe revisarse por región."
+          ]
+        },
+        {
+          "id": "nube",
+          "title": "Acceso remoto",
+          "paragraphs": [
+            "Una vía de acceso por streaming no equivale a una versión nativa. La conexión y el servicio contratado pueden condicionar esa experiencia."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "lanzamiento",
+        "precarga",
+        "jugabilidad"
+      ]
+    },
+    {
+      "id": "lucia-caminos",
+      "slug": "lucia-caminos",
+      "title": "Lucia Caminos",
+      "category": "personajes",
+      "categoryLabel": "Personajes",
+      "summary": "Ficha breve con información biográfica publicada por Rockstar.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "Lucia",
+        "historia"
+      ],
+      "facts": [
+        {
+          "text": "Lucia Caminos acaba de salir de la prisión de Leonida y busca cambiar su situación.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-leonida"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "La biografía oficial vincula sus planes de futuro con Jason.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-leonida"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Habilidades exclusivas y reglas de control del personaje: [PENDIENTE DE VERIFICAR].",
+          "status": "pending",
+          "sourceIds": [
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "perfil",
+          "title": "Perfil oficial",
+          "paragraphs": [
+            "Tras salir de prisión, Lucia quiere construir una vida diferente. Jason forma parte de sus planes."
+          ]
+        },
+        {
+          "id": "limites",
+          "title": "Límites de la ficha",
+          "paragraphs": [
+            "Esta biografía no permite deducir habilidades jugables, árbol de progresión ni condiciones de selección del personaje."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "jason-duval",
+        "resumen",
+        "trailers"
+      ]
+    },
+    {
+      "id": "jason-duval",
+      "slug": "jason-duval",
+      "title": "Jason Duval",
+      "category": "personajes",
+      "categoryLabel": "Personajes",
+      "summary": "Contexto oficial del personaje y su relación con Lucia.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "Jason",
+        "historia"
+      ],
+      "facts": [
+        {
+          "text": "La biografía de Jason Duval menciona su paso por el Ejército y su trabajo para traficantes en los Keys.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-leonida"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Su relación con Lucia ocupa un lugar central en la presentación oficial.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Habilidades y mecánicas específicas de Jason: [PENDIENTE DE VERIFICAR].",
+          "status": "pending",
+          "sourceIds": [
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "perfil",
+          "title": "Perfil oficial",
+          "paragraphs": [
+            "Jason pasó por el Ejército y después trabajó para traficantes en los Keys."
+          ]
+        },
+        {
+          "id": "limites",
+          "title": "Información por completar",
+          "paragraphs": [
+            "La ficha separa su pasado narrativo de cualquier capacidad que el jugador pudiera controlar."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "lucia-caminos",
+        "leonida",
+        "trailers"
+      ]
+    },
+    {
+      "id": "leonida",
+      "slug": "leonida",
+      "title": "El estado de Leonida",
+      "category": "mundo",
+      "categoryLabel": "Mundo",
+      "summary": "El marco geográfico de la historia presentada oficialmente.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "Leonida",
+        "ambientación"
+      ],
+      "facts": [
+        {
+          "text": "Leonida es el estado en el que se ambienta GTA VI; Vice City forma parte de él.",
+          "status": "confirmed",
+          "sourceIds": [
+            "tt-anuncio-2023"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "estado",
+          "title": "Ambientación",
+          "paragraphs": [
+            "El comunicado de presentación sitúa el juego en Leonida, con Vice City y otros lugares."
+          ]
+        },
+        {
+          "id": "mapa",
+          "title": "Sobre el mapa",
+          "paragraphs": [
+            "Dimensiones, fronteras y mapa interactivo exhaustivo: [PENDIENTE DE VERIFICAR]. No se incorpora cartografía de filtraciones ni reconstrucciones presentadas como oficiales."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "vice-city",
+        "regiones",
+        "resumen"
+      ]
+    },
+    {
+      "id": "vice-city",
+      "slug": "vice-city",
+      "title": "Vice City",
+      "category": "mundo",
+      "categoryLabel": "Mundo",
+      "summary": "Una ciudad confirmada dentro de la ambientación de GTA VI.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "Vice City",
+        "ciudad"
+      ],
+      "facts": [
+        {
+          "text": "Rockstar confirma el regreso a una Vice City contemporánea.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-noviembre-2025"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ciudad",
+          "title": "Regreso anunciado",
+          "paragraphs": [
+            "El anuncio de noviembre de 2025 describe el retorno a una Vice City de la época actual."
+          ]
+        },
+        {
+          "id": "detalle",
+          "title": "Calles y distritos",
+          "paragraphs": [
+            "El inventario completo de barrios, interiores y actividades queda [PENDIENTE DE VERIFICAR]. No se trasladan automáticamente datos del juego anterior del mismo nombre."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "leonida",
+        "regiones",
+        "saga"
+      ]
+    },
+    {
+      "id": "regiones",
+      "slug": "regiones",
+      "title": "Lugares presentados",
+      "category": "mundo",
+      "categoryLabel": "Mundo",
+      "summary": "Índice de nombres publicados en la sección oficial Only in Leonida.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "regiones",
+        "mapa"
+      ],
+      "facts": [
+        {
+          "text": "La web oficial presenta Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia y Mount Kalaga.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-leonida"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "indice",
+          "title": "Índice de lugares",
+          "paragraphs": [
+            "Vice City · Leonida Keys · Grassrivers · Port Gellhorn · Ambrosia · Mount Kalaga."
+          ]
+        },
+        {
+          "id": "alcance",
+          "title": "Alcance del índice",
+          "paragraphs": [
+            "La presencia de estos nombres no establece que constituyan una lista exhaustiva del mapa ni permite calcular distancias o superficies."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "leonida",
+        "vice-city",
+        "jason-duval"
+      ]
+    },
+    {
+      "id": "trailers",
+      "slug": "trailers",
+      "title": "Tráilers y vídeos oficiales",
+      "category": "trailers",
+      "categoryLabel": "Tráilers",
+      "summary": "Enlaces oficiales para seguir la presentación del juego sin alojar sus vídeos.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "vídeos",
+        "Trailer 1",
+        "Trailer 2"
+      ],
+      "facts": [
+        {
+          "text": "Trailer 1 se publicó el 4 de diciembre de 2023 y Trailer 2 el 6 de mayo de 2025.",
+          "status": "confirmed",
+          "sourceIds": [
+            "trailer-1",
+            "trailer-2"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "An Extended Look se publicó el 27 de agosto de 2026.",
+          "status": "confirmed",
+          "sourceIds": [
+            "extended-look",
+            "extended-anuncio"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "El índice oficial registra el tráiler de lanzamiento el 15 de octubre de 2026 y un vídeo de precarga el 10 de noviembre.",
+          "status": "confirmed",
+          "sourceIds": [
+            "newswire-vi",
+            "rockstar-precarga"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "La descripción de Trailer 2 indica captura en PS5 y una combinación de gameplay y cinemáticas.",
+          "status": "confirmed",
+          "sourceIds": [
+            "trailer-2"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "orden",
+          "title": "Orden de consulta",
+          "paragraphs": [
+            "Comienza por Trailer 1 y Trailer 2; continúa con An Extended Look y las publicaciones de lanzamiento y precarga. Los enlaces están en las fuentes de esta ficha."
+          ]
+        },
+        {
+          "id": "analisis",
+          "title": "Qué permite afirmar un vídeo",
+          "paragraphs": [
+            "Una escena de un tráiler no confirma por sí sola una función controlable por el jugador. Cualquier interpretación debe identificarse como análisis y localizar su evidencia."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "musica",
+        "jugabilidad",
+        "lucia-caminos",
+        "jason-duval"
+      ]
+    },
+    {
+      "id": "musica",
+      "slug": "musica",
+      "title": "Música y bandas sonoras",
+      "category": "musica",
+      "categoryLabel": "Música",
+      "summary": "Canciones acreditadas en los dos primeros tráilers y publicaciones musicales oficiales.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "Tom Petty",
+        "The Pointer Sisters",
+        "Justice"
+      ],
+      "facts": [
+        {
+          "text": "Trailer 1 acredita Love Is a Long Road, de Tom Petty.",
+          "status": "confirmed",
+          "sourceIds": [
+            "trailer-1"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Trailer 2 acredita Hot Together, de The Pointer Sisters.",
+          "status": "confirmed",
+          "sourceIds": [
+            "trailer-2"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Rockstar anuncia The Album para el 19 de noviembre de 2026, con 34 temas originales.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-album"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "La página musical oficial atribuye la partitura original a Justice y presenta una selección de emisoras.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-musica"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "trailers",
+          "title": "Créditos de los tráilers",
+          "paragraphs": [
+            "Las descripciones oficiales acreditan a Tom Petty en Trailer 1 y a The Pointer Sisters en Trailer 2."
+          ]
+        },
+        {
+          "id": "publicaciones",
+          "title": "Música del juego",
+          "paragraphs": [
+            "The Album y la partitura original son publicaciones distintas. La sección musical oficial permite consultar sus anuncios y emisoras; esta wiki no reproduce audio, letras ni carátulas."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "trailers",
+        "resumen"
+      ]
+    },
+    {
+      "id": "jugabilidad",
+      "slug": "jugabilidad",
+      "title": "Jugabilidad y rendimiento",
+      "category": "jugabilidad",
+      "categoryLabel": "Jugabilidad",
+      "summary": "Información técnica confirmada y cuestiones que aún requieren una fuente precisa.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "gameplay",
+        "rendimiento",
+        "PS5 Pro"
+      ],
+      "facts": [
+        {
+          "text": "Rockstar declara un objetivo de 30 fotogramas por segundo para la experiencia en consolas.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-precarga"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "La noticia del 10 de noviembre detalla PSSR y sombras con trazado de rayos en PS5 Pro.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-precarga"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "El catálogo completo de actividades, controles y mecánicas: [PENDIENTE DE VERIFICAR] mediante material oficial localizado.",
+          "status": "pending",
+          "sourceIds": [
+            "extended-look",
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "tecnica",
+          "title": "Anuncio técnico",
+          "paragraphs": [
+            "Un objetivo de rendimiento anunciado no sustituye una medición independiente. No debe presentarse como garantía de estabilidad en todas las situaciones."
+          ]
+        },
+        {
+          "id": "mecanicas",
+          "title": "Mecánicas",
+          "paragraphs": [
+            "Esta edición de la ficha no ofrece una lista exhaustiva de sistemas jugables. Para añadir una mecánica se exige una declaración explícita o una evidencia oficial identificable."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "trailers",
+        "plataformas",
+        "vehiculos-armas"
+      ]
+    },
+    {
+      "id": "modos",
+      "slug": "modos",
+      "title": "Modos y GTA Online",
+      "category": "jugabilidad",
+      "categoryLabel": "Jugabilidad",
+      "summary": "Seguimiento separado de los anuncios sobre modos de juego.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "pending",
+      "tags": [
+        "online",
+        "multijugador"
+      ],
+      "facts": [
+        {
+          "text": "Detalles, fecha y condiciones de un posible componente online de GTA VI: [PENDIENTE DE VERIFICAR] en Rockstar Newswire.",
+          "status": "pending",
+          "sourceIds": [
+            "newswire-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "estado",
+          "title": "Estado de la ficha",
+          "paragraphs": [
+            "No se ha incorporado a este catálogo una fuente verificada que permita describir los modos online de GTA VI. Esto no equivale a afirmar que un modo exista o no exista."
+          ]
+        },
+        {
+          "id": "criterio",
+          "title": "Criterio editorial",
+          "paragraphs": [
+            "Los anuncios de GTA Online asociados a otros títulos no se aplican automáticamente a GTA VI."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "resumen",
+        "preguntas-frecuentes",
+        "jugabilidad"
+      ]
+    },
+    {
+      "id": "vehiculos-armas",
+      "slug": "vehiculos-armas",
+      "title": "Vehículos, armas y objetos",
+      "category": "jugabilidad",
+      "categoryLabel": "Jugabilidad",
+      "summary": "Inventario reservado a nombres y funciones documentados oficialmente.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "pending",
+      "tags": [
+        "vehículos",
+        "armas",
+        "objetos"
+      ],
+      "facts": [
+        {
+          "text": "Lista completa de vehículos, armas y objetos utilizables: [PENDIENTE DE VERIFICAR] con nombre y localizador en una fuente oficial.",
+          "status": "pending",
+          "sourceIds": [
+            "rockstar-vi",
+            "extended-look"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "inventario",
+          "title": "Inventario en revisión",
+          "paragraphs": [
+            "Esta primera edición no asigna nombres a modelos identificados solo por parecido visual. Tampoco publica estadísticas, precios o disponibilidad sin evidencia."
+          ]
+        },
+        {
+          "id": "evidencia",
+          "title": "Cómo se incorporan elementos",
+          "paragraphs": [
+            "Cada nueva entrada requiere el nombre anunciado o una descripción prudente de lo observado, la fuente y el minuto correspondiente. Una aparición visual no acredita necesariamente disponibilidad para el jugador."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "jugabilidad",
+        "trailers"
+      ]
+    },
+    {
+      "id": "preguntas-frecuentes",
+      "slug": "preguntas-frecuentes",
+      "title": "Preguntas frecuentes",
+      "category": "general",
+      "categoryLabel": "El juego",
+      "summary": "Respuestas breves con separación entre información confirmada y pendientes.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "pending",
+      "tags": [
+        "FAQ",
+        "precio",
+        "PC"
+      ],
+      "facts": [
+        {
+          "text": "La fecha anunciada es el 19 de noviembre de 2026.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-noviembre-2025"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Precio por país, moneda y edición: [PENDIENTE DE VERIFICAR] en la tienda oficial correspondiente.",
+          "status": "pending",
+          "sourceIds": [
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Lanzamiento nativo en PC y requisitos de hardware: [PENDIENTE DE VERIFICAR].",
+          "status": "pending",
+          "sourceIds": [
+            "rockstar-vi"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "fecha",
+          "title": "¿Cuándo sale?",
+          "paragraphs": [
+            "El 19 de noviembre de 2026 según el calendario anunciado, sujeto a cambios."
+          ]
+        },
+        {
+          "id": "precio",
+          "title": "¿Cuánto cuesta?",
+          "paragraphs": [
+            "[PENDIENTE DE VERIFICAR]. El precio debe vincularse a una edición, una tienda, una región, una moneda y una fecha; no se publica una cifra universal."
+          ]
+        },
+        {
+          "id": "pc",
+          "title": "¿Y la versión para PC?",
+          "paragraphs": [
+            "[PENDIENTE DE VERIFICAR]. Esta wiki no deduce una fecha para PC a partir del historial de otros títulos."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "lanzamiento",
+        "plataformas",
+        "modos"
+      ]
+    },
+    {
+      "id": "saga",
+      "slug": "saga",
+      "title": "La saga: contexto",
+      "category": "saga",
+      "categoryLabel": "La saga",
+      "summary": "Referencias históricas básicas para situar esta entrega.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "GTA III",
+        "Vice City",
+        "San Andreas",
+        "GTA IV",
+        "GTA V"
+      ],
+      "facts": [
+        {
+          "text": "El comunicado de presentación recuerda GTA III (2001) y las entregas Vice City, San Andreas, GTA IV y GTA V.",
+          "status": "confirmed",
+          "sourceIds": [
+            "tt-anuncio-2023"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "contexto",
+          "title": "Lectura histórica",
+          "paragraphs": [
+            "El anuncio de GTA VI sitúa la nueva entrega en una serie que incluye GTA III, Vice City, San Andreas, GTA IV y GTA V."
+          ]
+        },
+        {
+          "id": "continuidad",
+          "title": "Sin deducir continuidad",
+          "paragraphs": [
+            "Compartir un nombre de lugar o una marca de la saga no basta para establecer continuidad narrativa, personajes compartidos o mecánicas idénticas."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "resumen",
+        "vice-city"
+      ]
+    },
+    {
+      "id": "precarga",
+      "slug": "precarga",
+      "title": "La precarga ya está anunciada",
+      "category": "noticias",
+      "categoryLabel": "Noticias",
+      "summary": "Qué dice el comunicado oficial publicado el 10 de noviembre de 2026.",
+      "updatedAt": "2026-11-17",
+      "readingMinutes": 2,
+      "status": "confirmed",
+      "tags": [
+        "precarga",
+        "noticia",
+        "lanzamiento"
+      ],
+      "facts": [
+        {
+          "text": "Rockstar anunció la disponibilidad de la precarga digital el 10 de noviembre de 2026.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-precarga"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "Soporte de Rockstar sitúa el desbloqueo del juego a medianoche local del 19 de noviembre de 2026.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-horarios"
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "text": "La noticia distingue la reserva digital y la activación de un código recibido en una caja.",
+          "status": "confirmed",
+          "sourceIds": [
+            "rockstar-precarga"
+          ],
+          "verifiedAt": "2026-11-17"
+        }
+      ],
+      "sections": [
+        {
+          "id": "anuncio",
+          "title": "Anuncio de precarga",
+          "paragraphs": [
+            "Descarga anticipada y desbloqueo son momentos distintos. Comprueba las condiciones que corresponden a tu compra."
+          ]
+        },
+        {
+          "id": "horario",
+          "title": "Comprobar la región",
+          "paragraphs": [
+            "Consulta el soporte enlazado y la tienda de tu cuenta para comprobar las condiciones aplicables a tu región."
+          ]
+        }
+      ],
+      "relatedIds": [
+        "lanzamiento",
+        "plataformas"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2023-12-04",
+      "title": "Presentación de GTA VI",
+      "description": "Anuncio de la nueva entrega y publicación de Trailer 1; la ventana inicial era 2025.",
+      "sourceId": "tt-anuncio-2023",
+      "articleId": "resumen"
+    },
+    {
+      "date": "2025-05-02",
+      "title": "El calendario pasa a mayo de 2026",
+      "description": "Rockstar anuncia el 26 de mayo de 2026; fecha histórica posteriormente sustituida.",
+      "sourceId": "rockstar-mayo-2025",
+      "articleId": "lanzamiento"
+    },
+    {
+      "date": "2025-05-06",
+      "title": "Trailer 2",
+      "description": "Publicación del segundo tráiler en el canal oficial.",
+      "sourceId": "trailer-2",
+      "articleId": "trailers"
+    },
+    {
+      "date": "2025-11-06",
+      "title": "Nueva fecha: noviembre de 2026",
+      "description": "El anuncio fija el 19 de noviembre de 2026.",
+      "sourceId": "rockstar-noviembre-2025",
+      "articleId": "lanzamiento"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "An Extended Look",
+      "description": "Publicación del vídeo oficial de presentación ampliada.",
+      "sourceId": "extended-look",
+      "articleId": "trailers"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Anuncio de The Album",
+      "description": "Rockstar presenta el álbum musical previsto para el lanzamiento.",
+      "sourceId": "rockstar-album",
+      "articleId": "musica"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Tráiler de lanzamiento",
+      "description": "Publicación registrada en el índice oficial de Newswire.",
+      "sourceId": "newswire-vi",
+      "articleId": "trailers"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Actualización de Take-Two",
+      "description": "Los resultados corporativos mantienen el lanzamiento previsto.",
+      "sourceId": "tt-resultados-2026",
+      "articleId": "lanzamiento"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Precarga y detalles técnicos",
+      "description": "Rockstar publica su aviso de precarga y datos de consolas.",
+      "sourceId": "rockstar-precarga",
+      "articleId": "precarga"
+    }
+  ],
+  "rumors": []
+}
